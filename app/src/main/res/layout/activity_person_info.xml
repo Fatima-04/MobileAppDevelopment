@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".PersonInfo">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="193dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/fullNameLabel"
+        android:layout_width="115dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:text="Full Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:hint="Enter your full name" />
+
+    <TextView
+        android:id="@+id/cardNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:text="Credit/Debit Card Number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTxtCard"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:hint="Enter your card number"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/favouriteSportLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Favourite Sport"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/favouriteSportEditText"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:hint="Enter your favourite sport" />
+
+    <TextView
+        android:id="@+id/favouriteFoodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Favourite Food"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/favouriteFoodEditText"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:hint="Enter your favourite food" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="377dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:textSize="25sp" />
+</LinearLayout>

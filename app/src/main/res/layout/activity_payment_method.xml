@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentMethod">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="193dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPayment"
+        android:layout_width="344dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="124dp"
+        android:text="Choose your preffered Payment Method"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/radGrpPayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <RadioGroup
+        android:id="@+id/radGrpPayment"
+        android:layout_width="367dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPayment">
+
+        <RadioButton
+            android:id="@+id/radCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radCredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radDebit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPayment"
+        android:layout_width="397dp"
+        android:layout_height="78dp"
+        android:text="Next"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radGrpPayment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HouseTypes">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="193dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radGroup"
+        android:layout_width="381dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTypesOfHouses"
+        app:layout_constraintVertical_bias="0.173">
+
+        <RadioButton
+            android:id="@+id/radAppart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appartment"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radDetachedHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detached Home"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radSemi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semi-Detached Home"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radCondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Condominium Apartment"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radTown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Townhouse"
+            android:textSize="25sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtTypesOfHouses"
+        android:layout_width="327dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="289dp"
+        android:text="Types Of Houses:"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
